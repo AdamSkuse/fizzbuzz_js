@@ -5,6 +5,13 @@ FizzBuzz.prototype.play = function(number) {
   if (this.isDivisibleby(15,number)) {
   return 'FizzBuzz';
   }
+  if (this.isDivisibleby(3,number)) {
+   return 'Fizz';
+  }
+  if (this.isDivisibleby(5,number)) {
+   return 'Buzz';
+  }
+  return number;
 }
 
 FizzBuzz.prototype.isDivisibleby = function(divisor, number) {

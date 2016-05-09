@@ -11,6 +11,21 @@ describe("FizzBuzz", function() {
     expect(fizzBuzz.play(15)).toEqual('FizzBuzz')
   });
 
+  it('returns "fizz" when passed multiples of 3', function() {
+    expect(fizzBuzz.play(3)).toEqual('Fizz')
+
+  });
+
+   it('returns "buzz" when passed multiples of 5', function() {
+    expect(fizzBuzz.play(5)).toEqual('Buzz')
+
+  });
+
+    it('returns the number if not divisible by 3 or 5', function() {
+    expect(fizzBuzz.play(2)).toEqual(2)
+
+  });
+
 });
 //
 //     //demonstrates use of custom matcher
